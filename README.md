@@ -2,10 +2,30 @@
 
 An end-to-end data engineering and analytics project that harvests, cleans, and visualizes multi-source market data across Kenya (Real Estate, E-Commerce, and Social Media trends). Built using **Scrapy**, **Pandas**, and **Streamlit**.
 
+# 📊 Kenya Market Data Harvester & Analytics Pipeline
+
+An end-to-end data engineering and analytics pipeline designed to harvest, clean, transform, and visualize multi-source market data across Kenya—covering Real Estate, E-Commerce, and Social Media/Community Trends. 
+
 ![Python](https://img.shields.io/badge/Python-3.12%2B-blue.svg)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-red.svg)
 ![Scrapy](https://img.shields.io/badge/Scrapy-Web%20Scraper-orange.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
+
+---
+
+## 🏛️ Architecture & Pipeline Flow
+
+```text
+[ Target Web Sources ] 
+         │
+         ▼ (Scrapy Spiders)
+[ Raw JSON Datasets (Root Caches) ]
+         │
+         ▼ (Pandas ETL & Defensive Normalization)
+[ Cleaned Dataframes & Price Sliders ]
+         │
+         ▼
+[ Streamlit Analytics Dashboard & CSV Exports ]
 
 ---
 
